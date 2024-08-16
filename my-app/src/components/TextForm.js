@@ -17,6 +17,8 @@ export default function TextForm(props) {
   //text = "new text" // wrong way to change state
   //setText("new text"); // correct way
   return (
+    <>
+
     <div>
       <h1>{props.heading} </h1>
       <div className="mb-3">
@@ -25,5 +27,9 @@ export default function TextForm(props) {
       </div>
       <button className="btn btn-primary"  onClick={handleUpClick}>Convert to Uppercase </button>
     </div>
+
+    </>
+    
+
   );
 }
